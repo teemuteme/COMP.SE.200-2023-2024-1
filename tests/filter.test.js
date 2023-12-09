@@ -2,7 +2,7 @@ import filter from '../src/filter.js'
 import chai from 'chai';
 const expect = chai.expect;
 
-describe('Filter function', function () {
+describe('Filtering products from array', function () {
 
     it("Test function to work correctly with basic numbers", function(){
         const inputArray = [1, 2, 3, 4, 5];
@@ -12,7 +12,7 @@ describe('Filter function', function () {
     // it("Test empty array",function(){
     //     const inputArray = [];
     //     const predicate = (value) => value > 0;
-    //     expect(filter(inputArray, predicate)).to.be.an('array').to.be.empty
+    //     expect(filter(inputArray, predicate)).to.be.lengthOf(0)
     // })
     it("Test array with only same values",function(){
         const inputArray = [1,1,1,1,1];
