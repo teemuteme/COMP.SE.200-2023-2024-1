@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "directories": {
-    "tests": "tests"
+    "test": "tests"
   },
   "scripts": {
     "test": "mocha tests"
