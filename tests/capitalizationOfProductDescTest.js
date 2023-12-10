@@ -6,17 +6,6 @@ const expect = chai.expect;
 
 describe('Capitalization of product descriptions', function () {
 
-    it("Test toString works when data is number", function(){
-        const value = 100;
-        const string = toString(value)
-        expect(toString(string)).to.be.a('string')
-    })
-    it("Test toString works when data is string", function(){
-        const value = "test";
-        const string = toString(value)
-        expect(toString(string)).to.be.a('string')
-    })
-
     it("Test upperFirst if string is all lowercase", function(){
         const test = "test"
         expect(upperFirst(test)).to.be.deep.equal("Test")

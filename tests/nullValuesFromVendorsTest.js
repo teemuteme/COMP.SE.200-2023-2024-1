@@ -17,8 +17,15 @@ describe('Testing null values left by vendors', function () {
     it("Testing functionality of isSymbol when false", function(){
         expect(isSymbol(null)).to.be.false
     })
-    it("Testing functionality of toString", function(){
+
+    it("Testing functionality of toString with integer", function(){
         const value = 2;
         expect(toString(value)).to.be.deep.equal("2")
+    })
+    it("Test toString to return always string", function(){
+        const value = 100;
+        const string = "test";
+        expect(toString(value)).to.be.a('string')
+        expect(toString(string)).to.be.a('string')
     })
 })
