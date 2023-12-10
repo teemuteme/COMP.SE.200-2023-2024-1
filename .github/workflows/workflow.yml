@@ -24,17 +24,18 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
+      - run: npm test
   
-  runtests: 
-    needs: build
-    runs-on: ubuntu-latest
+ # runtests: 
+  #  needs: build
+   # runs-on: ubuntu-latest
   
-    steps:
-      - name: Run tests
-        run: npm --prefix ../../../ test
+   # steps:
+    #  - name: Run tests
+     #   run: npm --prefix ../../../ test
       
   report:
-    needs: runtests
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
