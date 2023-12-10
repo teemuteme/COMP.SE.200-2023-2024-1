@@ -27,6 +27,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
   runtests: 
     needs: build
     runs-on: ubuntu-latest
@@ -34,6 +36,4 @@ jobs:
     steps:
       - uses: coverallsapp/github-action@v2.2.3
       - name: Coveralls GitHub Action 
-      - run: npm ci
-      - run: npm run build --if-present
       - run: npm test
