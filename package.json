@@ -1,12 +1,17 @@
 {
-  "name": "software-testing-assignment",
+  "name": "comp.se.200-2023-2024-1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "directories": {
+    "tests": "tests"
   "scripts": {
     "test": "mocha tests"
-    "coverage": "c8 report --exclude \"src/.internal\" --exclude \"tests\" --reporter lcov && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teemuteme/COMP.SE.200-2023-2024-1.git"
   },
   "author": "",
   "license": "MIT",
