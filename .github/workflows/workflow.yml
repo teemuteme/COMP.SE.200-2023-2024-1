@@ -26,7 +26,7 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
       - name: Coveralls GitHub Action
-      - uses: coverallsapp/github-action@v2.2.3
+        uses: coverallsapp/github-action@v2.2.3
   
  # runtests: 
   #  needs: build
@@ -37,7 +37,7 @@ jobs:
      #   run: npm --prefix ../../../ test
       
  # report:
-  #  needs: build
+  #  needs: runtests
    # runs-on: ubuntu-latest
     
    # steps:
